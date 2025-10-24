@@ -43,18 +43,18 @@ export function UpdatePasswordForm({ className, ...props }: React.ComponentProps
     <div className={cn('flex flex-col gap-6', className)} {...props}>
       <Card>
         <CardHeader>
-          <CardTitle className="text-2xl">Reset Your Password</CardTitle>
-          <CardDescription>Please enter your new password below.</CardDescription>
+          <CardTitle className="text-2xl">รีเซ็ตรหัสผ่านของคุณ</CardTitle>
+          <CardDescription>กรุณากรอกรหัสผ่านใหม่ด้านล่าง</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleForgotPassword}>
             <div className="flex flex-col gap-6">
               <div className="grid gap-2">
-                <Label htmlFor="password">New password</Label>
+                <Label htmlFor="password">รหัสผ่านใหม่</Label>
                 <Input
                   id="password"
                   type="password"
-                  placeholder="New password"
+                  placeholder="กรอกรหัสผ่านใหม่"
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -62,7 +62,7 @@ export function UpdatePasswordForm({ className, ...props }: React.ComponentProps
               </div>
               {error && <p className="text-sm text-red-500">{error}</p>}
               <Button type="submit" className="w-full" disabled={isLoading}>
-                {isLoading ? 'Saving...' : 'Save new password'}
+                {isLoading ? 'กำลังบันทึก...' : 'บันทึกรหัสผ่านใหม่'}
               </Button>
             </div>
           </form>
@@ -70,4 +70,5 @@ export function UpdatePasswordForm({ className, ...props }: React.ComponentProps
       </Card>
     </div>
   )
+  
 }
