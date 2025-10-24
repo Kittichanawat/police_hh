@@ -174,7 +174,7 @@ export default function VisitForm() {
                   <SelectItem value="สวป.">สวป.</SelectItem>
                   <SelectItem value="รอง สว.">รอง สว.</SelectItem>
                   <SelectItem value="ผกก.">ผกก.</SelectItem>
-                  <SelectItem value="ผกก.">รอง ป.</SelectItem>
+                  <SelectItem value="รอง ป.">รอง ป.</SelectItem>
                 </SelectContent>
               </Select>
             </div>
